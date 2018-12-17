@@ -1,12 +1,9 @@
 use sakila;
 
-#SELECT * FROM actor;
-
 #1a. Display the first and last names of all actors from the table `actor`.
 SELECT first_name
 , last_name 
 FROM `sakila`.`actor`;
-
 
 #1b. Display the first and last name of each actor in a single column in upper case letters. Name the column `Actor Name`.
 SELECT CONCAT (UPPER(first_name)
@@ -23,7 +20,6 @@ SELECT `first_name`
 , `actor_id`
 FROM `sakila`.`actor` 
 WHERE `first_name` = "Joe";
-
 
 #2b. Find all actors whose last name contain the letters GEN:
 SELECT `first_name`
